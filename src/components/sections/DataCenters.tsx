@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Server, MapPin } from "lucide-react";
+import { Server, MapPin, TrendingUp, Droplets } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { cities } from "@/data/cities";
+import { infrastructureFacts } from "@/data/infrastructure-facts";
+import { cn } from "@/lib/utils";
 
 const facilities = cities
   .slice()
@@ -29,10 +31,54 @@ export function DataCenters() {
         <SectionHeading
           eyebrow="The Infrastructure"
           title="AI runs on real buildings, real power, and real hardware"
-          description="Every model, chatbot, and app is backed by physical infrastructure somewhere. Along the route, we're stopping at the data centers and fabs actually running the AI economy."
+          description="Every model, chatbot, and app is backed by physical infrastructure somewhere. Data centers get built where communities actually feel it — in jobs, tax revenue, and grid investment, alongside real costs worth weighing honestly."
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {/* Why it matters */}
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {infrastructureFacts.map((fact, i) => (
+            <motion.a
+              key={fact.label}
+              href={fact.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className={cn(
+                "focus-ring group flex flex-col rounded-2xl border p-6",
+                fact.tone === "benefit"
+                  ? "border-surface-border bg-surface-2"
+                  : "border-signal-3/30 bg-signal-3/[0.06]",
+              )}
+            >
+              <div className="flex items-center gap-2">
+                {fact.tone === "benefit" ? (
+                  <TrendingUp className="size-4 text-signal-2" strokeWidth={1.75} />
+                ) : (
+                  <Droplets className="size-4 text-signal-3" strokeWidth={1.75} />
+                )}
+                <span
+                  className={cn(
+                    "font-mono text-[10px] uppercase tracking-wider",
+                    fact.tone === "benefit" ? "text-signal-2" : "text-signal-3",
+                  )}
+                >
+                  {fact.tone === "benefit" ? "Real benefit" : "Real tradeoff"}
+                </span>
+              </div>
+              <span className="mt-4 font-display text-3xl font-bold text-ink">{fact.value}</span>
+              <p className="mt-2 flex-1 text-sm leading-snug text-ink-muted">{fact.label}</p>
+              <p className="mt-4 font-mono text-[10px] uppercase tracking-wider text-ink-faint transition-colors group-hover:text-ink-muted">
+                {fact.source}
+              </p>
+            </motion.a>
+          ))}
+        </div>
+
+        {/* Facilities on the route */}
+        <div className="mt-20 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {facilities.map((facility, i) => (
             <motion.div
               key={facility.name}

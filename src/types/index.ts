@@ -77,6 +77,14 @@ export interface ImpactStat {
   url: string;
 }
 
+export interface InfrastructureFact {
+  value: string;
+  label: string;
+  source: string;
+  url: string;
+  tone: "benefit" | "consideration";
+}
+
 export interface OpportunityStory {
   sector: string;
   headline: string;
