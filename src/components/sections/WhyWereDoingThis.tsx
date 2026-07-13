@@ -9,17 +9,17 @@ const reasons = [
   {
     icon: Eye,
     title: "Most people have never seen AI being built",
-    body: "They see headlines and demos, not the labs, the whiteboards, or the people writing the code. That gap is where fear lives.",
+    body: "They see headlines and demos, not the labs, the whiteboards, or the people writing the code. Fear fills that gap. We're closing it.",
   },
   {
     icon: Users,
     title: "Understanding comes from meeting people",
-    body: "It's harder to be afraid of something once you've talked to the engineer, the founder, or the small-business owner actually using it.",
+    body: "It's hard to stay afraid of something once you've talked to the engineer, the founder, or the small-business owner actually using it to build something better.",
   },
   {
     icon: Compass,
     title: "The story is happening everywhere, not just Silicon Valley",
-    body: "Nashville, Austin, Tampa, and the Central Valley all have their own AI story. We want to show the whole map, not just one corner of it.",
+    body: "DC, Nashville, Tampa, Austin, and the Central Valley all have their own AI story. This is the whole map, not just one corner of it.",
   },
 ];
 
@@ -30,8 +30,8 @@ export function WhyWereDoingThis() {
         <SectionHeading
           eyebrow="Why We're Doing This"
           tone="light"
-          title="AI is easy to fear and hard to understand. We want to close that gap."
-          description="A lot of people are anxious about AI — and reasonably so, given how it's usually talked about. Most of that conversation happens far away from where AI is actually built. We're going there instead."
+          title="AI is the biggest economic shift in a generation. Most people have never seen it happen."
+          description="The conversation about AI happens far from where it's actually built — in headlines, hot takes, and hearings. We're going straight to the source: the labs, the garages, and the small businesses already using it to grow."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -64,9 +64,9 @@ export function WhyWereDoingThis() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mx-auto mt-16 max-w-2xl text-center text-base leading-relaxed text-paper-ink-muted"
         >
-          We&apos;re not here to sell AI or dismiss the real concerns around it. We&apos;re here
-          to document it honestly — the good, the uncertain, and the genuinely new
-          opportunities it&apos;s creating.
+          AI is already changing how small businesses compete, how doctors spend their time,
+          and how new companies get built. We think that&apos;s worth getting excited about —
+          and worth seeing in person, not just reading about.
         </motion.p>
       </Container>
     </section>

@@ -13,7 +13,7 @@ export function AICreatesOpportunity() {
           eyebrow="AI Creates Opportunity"
           tone="light"
           title="Technology has always changed jobs. It's also always created new ones."
-          description="That pattern isn't guaranteed to repeat exactly — but it's the honest starting point. Along the route, we're documenting where AI is already replacing tasks, and where it's opening doors that didn't exist five years ago."
+          description="That's not a guarantee — it's a pattern worth betting on. Along the route, we're finding the proof: where AI is already replacing tasks, and where it's opening doors that didn't exist five years ago."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,9 +57,8 @@ export function AICreatesOpportunity() {
           className="mx-auto mt-16 max-w-2xl rounded-2xl border border-black/[0.06] bg-paper-2 p-8 text-center"
         >
           <p className="text-base leading-relaxed text-paper-ink-muted">
-            We&apos;re not claiming every job disrupted by AI gets replaced one-for-one.
-            We&apos;re committing to show real examples, from real people, and let viewers
-            draw their own conclusions.
+            Every example on this page is real — a real business, a real person, a real
+            outcome. Show enough of them, and the pattern speaks for itself.
           </p>
         </motion.div>
       </Container>

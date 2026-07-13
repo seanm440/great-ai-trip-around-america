@@ -70,6 +70,13 @@ export interface BusFeature {
   };
 }
 
+export interface ImpactStat {
+  value: string;
+  label: string;
+  source: string;
+  url: string;
+}
+
 export interface OpportunityStory {
   sector: string;
   headline: string;
