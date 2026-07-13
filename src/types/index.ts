@@ -4,12 +4,16 @@ export interface CompanyVisit {
   name: string;
   category: string;
   blurb: string;
+  sourceName: string;
+  sourceUrl: string;
 }
 
 export interface DataCenterVisit {
   name: string;
   operator: string;
   blurb: string;
+  sourceName: string;
+  sourceUrl: string;
 }
 
 export interface City {
@@ -44,6 +48,8 @@ export interface Waypoint {
   business: {
     name: string;
     blurb: string;
+    sourceName: string;
+    sourceUrl: string;
   };
 }
 
@@ -91,4 +97,6 @@ export interface OpportunityStory {
   body: string;
   stat?: string;
   statLabel?: string;
+  sourceName: string;
+  sourceUrl: string;
 }

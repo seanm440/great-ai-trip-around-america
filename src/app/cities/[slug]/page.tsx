@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Building2, Server, GraduationCap, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { StatusBadge } from "@/components/ui/StatusBadge";
+import { SourceLink } from "@/components/ui/SourceLink";
 import { cities, getAllCitySlugs, getCityBySlug } from "@/data/cities";
 
 export function generateStaticParams() {
@@ -117,6 +118,11 @@ export default async function CityPage({
                         <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                           {company.blurb}
                         </p>
+                        <SourceLink
+                          name={company.sourceName}
+                          url={company.sourceUrl}
+                          className="mt-3"
+                        />
                       </div>
                     ))}
                   </div>
@@ -146,6 +152,7 @@ export default async function CityPage({
                         <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                           {dc.blurb}
                         </p>
+                        <SourceLink name={dc.sourceName} url={dc.sourceUrl} className="mt-3" />
                       </div>
                     ))}
                   </div>

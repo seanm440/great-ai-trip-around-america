@@ -7,6 +7,7 @@ import { ArrowUpRight, Store, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatusBadge } from "@/components/ui/StatusBadge";
+import { SourceLink } from "@/components/ui/SourceLink";
 import { cities } from "@/data/cities";
 import { waypoints } from "@/data/waypoints";
 import { cn } from "@/lib/utils";
@@ -329,6 +330,12 @@ export function JourneyMap() {
                         <p className="mt-1.5 text-xs leading-relaxed text-paper-ink-muted">
                           {activeWaypoint.business.blurb}
                         </p>
+                        <SourceLink
+                          name={activeWaypoint.business.sourceName}
+                          url={activeWaypoint.business.sourceUrl}
+                          tone="light"
+                          className="mt-2"
+                        />
                       </div>
                     </>
                   )}

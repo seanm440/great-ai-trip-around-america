@@ -16,22 +16,29 @@ export const cities: City[] = [
     themes: ["GovTech", "Policy AI", "Civic Innovation"],
     companies: [
       {
-        name: "Govini",
+        name: "Air (formerly Govini)",
         category: "GovTech",
         blurb:
-          "Arlington-based team behind Ark.ai, an AI decision-science platform that helps the Department of Defense untangle supply-chain and acquisition data legacy systems can't touch.",
+          "Arlington-based team behind Ark, an AI decision-science platform that helps the Department of Defense untangle supply-chain and acquisition data legacy systems can't touch. Rebranded from Govini in June 2026.",
+        sourceName: "PR Newswire",
+        sourceUrl:
+          "https://www.prnewswire.com/news-releases/govini-declares-readiness-gap-a-national-security-crisis-at-2026-reindustrialize-summit-302801833.html",
       },
       {
         name: "POPVOX Foundation",
         category: "Civic Innovation",
         blurb:
           "A nonprofit founded by former Congressional staffers that runs free AI training for Congress and builds open-source tools that help legislatures use modern data.",
+        sourceName: "POPVOX Foundation",
+        sourceUrl: "https://www.popvox.org/about-us",
       },
       {
         name: "Center for AI and Digital Policy",
         category: "Policy AI",
         blurb:
           "A DC-based nonprofit that assesses national AI policies against democratic-governance standards and trains the next generation of AI policy leaders.",
+        sourceName: "CAIDP",
+        sourceUrl: "https://www.caidp.org/about-2/",
       },
     ],
     dataCenters: [
@@ -40,6 +47,9 @@ export const cities: City[] = [
         operator: "Amazon Web Services",
         blurb:
           "The original home of AWS's cloud infrastructure since 2006, anchoring the highest concentration of data centers on Earth in nearby Loudoun County, VA.",
+        sourceName: "Virginia Mercury",
+        sourceUrl:
+          "https://virginiamercury.com/2026/07/06/how-virginia-became-the-worlds-data-center-capital-and-how-its-going/",
       },
     ],
     universities: ["Georgetown University", "George Washington University"],
@@ -68,18 +78,26 @@ export const cities: City[] = [
         category: "Healthcare AI",
         blurb:
           "Franklin-based team behind Dragonfly, an AI platform hospitals and insurers use to make faster, more consistent medical-necessity decisions.",
+        sourceName: "Xsolis",
+        sourceUrl:
+          "https://www.xsolis.com/press-release/xsolis-announces-the-official-launch-of-next-generation-ai-powered-platform-dragonfly-at-xchange-24/",
       },
       {
         name: "UnityAI",
         category: "Healthcare AI",
         blurb:
           "Founded by former HCA Healthcare engineers, building AI \"care orchestration\" software that helps hospitals move patients through care faster.",
+        sourceName: "Fierce Healthcare",
+        sourceUrl:
+          "https://www.fiercehealthcare.com/ai-and-machine-learning/nashville-ai-start-secures-4m-seed-funding-boost-patient-flow",
       },
       {
         name: "Soundstripe",
         category: "Creative AI",
         blurb:
           "A Nashville music-licensing platform whose new AI tool, Supe, helps creators find and customize the right licensed track in seconds.",
+        sourceName: "Soundstripe",
+        sourceUrl: "https://www.soundstripe.com/blogs/supe-soundstripes-ai-search-assistant",
       },
     ],
     dataCenters: [
@@ -88,6 +106,8 @@ export const cities: City[] = [
         operator: "Flexential",
         blurb:
           "A colocation and cloud facility in Franklin, TN that's served Middle Tennessee businesses for close to fifteen years.",
+        sourceName: "Flexential",
+        sourceUrl: "https://www.flexential.com/data-centers/tn/nashville/franklin-data-center",
       },
     ],
     universities: ["Vanderbilt University", "Tennessee State University"],
@@ -116,18 +136,24 @@ export const cities: City[] = [
         category: "Cybersecurity AI",
         blurb:
           "Tampa-headquartered security company behind GreyMatter, an agentic AI platform that helps enterprise teams detect and respond to cyber threats in real time.",
+        sourceName: "ReliaQuest",
+        sourceUrl: "https://reliaquest.com/security-operations-platform/",
       },
       {
         name: "Slide Insurance",
         category: "Insurtech",
         blurb:
           "A Tampa-based property insurer using AI-driven underwriting to make faster coverage decisions in one of the country's hardest insurance markets: coastal Florida.",
+        sourceName: "Slide Insurance",
+        sourceUrl: "https://www.slideinsurance.com/about",
       },
       {
         name: "BlueGrace Logistics",
         category: "Logistics Tech",
         blurb:
           "A Riverview-based freight company whose BlueShip platform helps businesses plan and track shipments across carriers.",
+        sourceName: "BlueGrace Logistics",
+        sourceUrl: "https://mybluegrace.com/blueship-tms/",
       },
     ],
     dataCenters: [
@@ -135,7 +161,10 @@ export const cities: City[] = [
         name: "Flexential Tampa (West)",
         operator: "Flexential",
         blurb:
-          "A 91,000-square-foot colocation and disaster-recovery facility in West Tampa.",
+          "A 31,600-square-foot colocation and disaster-recovery facility in West Tampa.",
+        sourceName: "Flexential",
+        sourceUrl:
+          "https://www.flexential.com/system/files/file/2021-03/west-tampa-flexential-data-center-data-sheet.pdf",
       },
     ],
     universities: ["University of South Florida"],
@@ -164,18 +193,24 @@ export const cities: City[] = [
         category: "Robotics",
         blurb:
           "Builder of Apollo, a general-purpose humanoid robot designed for warehouse and industrial work — spun out of UT Austin's own robotics lab.",
+        sourceName: "Apptronik",
+        sourceUrl: "https://apptronik.com/apollo",
       },
       {
         name: "Coder",
         category: "Developer Tools",
         blurb:
           "An Austin startup building the infrastructure engineering teams use to run and manage AI coding agents at scale.",
+        sourceName: "Coder",
+        sourceUrl: "https://coder.com/solutions/agents",
       },
       {
         name: "Silicon Labs",
         category: "Semiconductors",
         blurb:
           "A fabless chip design company headquartered in Austin, building the microcontrollers and wireless chips that power IoT devices.",
+        sourceName: "Silicon Labs",
+        sourceUrl: "https://www.silabs.com/about-us",
       },
     ],
     dataCenters: [
@@ -184,6 +219,9 @@ export const cities: City[] = [
         operator: "Samsung Foundry",
         blurb:
           "A $17B+ chip fab under construction in nearby Taylor, TX, whose grid buildout is helping fuel a wave of new hyperscale data centers across Central Texas.",
+        sourceName: "DataCenterDynamics",
+        sourceUrl:
+          "https://www.datacenterdynamics.com/en/news/samsung-plans-17-billion-chip-plant-in-taylor-texas/",
       },
     ],
     universities: ["University of Texas at Austin", "Texas State University"],
@@ -211,19 +249,25 @@ export const cities: City[] = [
         name: "GUSS Automation",
         category: "Autonomous Equipment",
         blurb:
-          "Kingsburg-based maker of driverless, all-electric orchard sprayers that let one operator run up to eight machines at once — real Central Valley engineering, not a Silicon Valley import.",
+          "Kingsburg-based maker of driverless orchard sprayers that let one operator run up to eight machines at once — real Central Valley engineering, not a Silicon Valley import. The fleet is primarily diesel-powered, with an all-electric model introduced in 2024.",
+        sourceName: "GUSS Automation",
+        sourceUrl: "https://gussag.com/",
       },
       {
         name: "Netafim USA",
         category: "Water Tech",
         blurb:
           "Manufactures precision drip-irrigation systems at its Fresno facility, helping growers stretch every drop in one of the country's most water-stressed farming regions.",
+        sourceName: "The Business Journal",
+        sourceUrl: "https://thebusinessjournal.com/fresno-manufacturer-relocating-production-line-from-israel/",
       },
       {
         name: "Ceres AI",
         category: "Agriculture AI",
         blurb:
           "Uses aircraft-mounted imaging and AI to spot crop water stress within 48 hours — born out of California's drought and built for Central Valley growers, though the team itself is based in Oakland.",
+        sourceName: "Ceres AI",
+        sourceUrl: "https://ceres.ai/aerial-imagery",
       },
     ],
     dataCenters: [],

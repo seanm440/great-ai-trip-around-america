@@ -5,14 +5,14 @@ export const infrastructureFacts: InfrastructureFact[] = [
     value: "5.5M",
     label: "Jobs supported nationwide by the data center industry",
     source: "Data Center Coalition / PwC, National Economic Impact Study",
-    url: "https://www.datacentercoalition.org/reports-and-publications",
+    url: "https://www.centerofyourdigitalworld.org/2026-impact-study",
     tone: "benefit",
   },
   {
     value: "38%",
     label: "Of Loudoun County, VA's revenue, from just 4% of its land",
     source: "Loudoun County, VA — official government FAQ",
-    url: "https://www.loudoun.gov/FAQ.aspx?QID=1790",
+    url: "https://www.loudoun.gov/Faq.aspx?QID=1793",
     tone: "benefit",
   },
   {

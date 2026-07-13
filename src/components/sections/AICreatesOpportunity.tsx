@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SourceLink } from "@/components/ui/SourceLink";
 import { opportunityStories } from "@/data/opportunity-stories";
 
 export function AICreatesOpportunity() {
@@ -45,6 +46,12 @@ export function AICreatesOpportunity() {
                   )}
                 </div>
               )}
+              <SourceLink
+                name={story.sourceName}
+                url={story.sourceUrl}
+                tone="light"
+                className="mt-3"
+              />
             </motion.div>
           ))}
         </div>
