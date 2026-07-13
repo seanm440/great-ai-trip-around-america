@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { TripAssistant } from "@/components/chat/TripAssistant";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -75,7 +74,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <TripAssistant />
       </body>
     </html>
   );
