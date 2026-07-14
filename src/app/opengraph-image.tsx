@@ -72,7 +72,7 @@ export default function OGImage() {
             color: "#6b6f80",
           }}
         >
-          Washington DC · Nashville · Tampa · Austin · Central Valley
+          Nashville · Tampa · Austin · Central Valley
         </div>
       </div>
     ),

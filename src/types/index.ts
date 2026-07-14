@@ -45,7 +45,8 @@ export interface Waypoint {
     lat: number;
     lng: number;
   };
-  business: {
+  dateWindow?: string;
+  business?: {
     name: string;
     blurb: string;
     sourceName: string;

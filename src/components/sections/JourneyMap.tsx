@@ -26,15 +26,21 @@ type RouteStop =
   | { kind: "minor"; id: string };
 
 const routeSequence: RouteStop[] = [
-  { kind: "major", slug: "washington-dc" },
-  { kind: "minor", id: "knoxville" },
   { kind: "major", slug: "nashville" },
+  { kind: "minor", id: "knoxville" },
   { kind: "minor", id: "chattanooga" },
+  { kind: "minor", id: "atlanta" },
   { kind: "major", slug: "tampa" },
   { kind: "minor", id: "new-orleans" },
+  { kind: "minor", id: "richland-parish" },
+  { kind: "minor", id: "dallas-houston" },
   { kind: "major", slug: "austin" },
+  { kind: "minor", id: "midland-el-paso" },
   { kind: "minor", id: "tucson" },
+  { kind: "minor", id: "phoenix" },
+  { kind: "minor", id: "los-angeles" },
   { kind: "major", slug: "central-valley" },
+  { kind: "minor", id: "denver" },
 ];
 
 function coordinatesFor(stop: RouteStop) {
@@ -119,8 +125,8 @@ export function JourneyMap() {
       <Container className="relative">
         <SectionHeading
           eyebrow="The Route"
-          title="Five cities announced. Stops along the way, too."
-          description="From DC to the Central Valley, the bus passes through small towns as well as big ones. Select a pin for a city deep-dive, or a dot to meet a local business using AI."
+          title="Four cities announced. Stops along the way, too."
+          description="From Nashville to the Central Valley — and on to Denver — the bus passes through small towns as well as big ones. Select a pin for a city deep-dive, or a dot to see what's next along the route."
         />
 
         <div className="relative mt-16 rounded-3xl border border-surface-border bg-surface/60 p-4 sm:p-8">
@@ -185,12 +191,16 @@ export function JourneyMap() {
                 <button
                   key={waypoint.id}
                   type="button"
-                  title={`${waypoint.name}, ${waypoint.stateAbbr} — ${waypoint.business.name}`}
+                  title={
+                    waypoint.business
+                      ? `${waypoint.name}, ${waypoint.stateAbbr} — ${waypoint.business.name}`
+                      : `${waypoint.name}, ${waypoint.stateAbbr}`
+                  }
                   onClick={() => setActive(isActive ? null : { kind: "minor", id: waypoint.id })}
                   style={{ left: `${xPct.toFixed(3)}%`, top: `${yPct.toFixed(3)}%` }}
                   className="focus-ring absolute -translate-x-1/2 -translate-y-1/2 p-1.5"
                   aria-pressed={isActive}
-                  aria-label={`Preview ${waypoint.name} — ${waypoint.business.name}`}
+                  aria-label={`Preview ${waypoint.name}${waypoint.business ? ` — ${waypoint.business.name}` : ""}`}
                 >
                   <span className="relative flex items-center justify-center">
                     {isActive && (
@@ -308,35 +318,44 @@ export function JourneyMap() {
 
                   {activeWaypoint && (
                     <>
-                      <span className="inline-flex w-fit items-center gap-2 rounded-full border border-signal-1/25 bg-signal-1/[0.06] px-3 py-1 pr-6 font-mono text-[11px] uppercase tracking-wider text-signal-1">
-                        <span className="size-1.5 rounded-full bg-signal-1" />
-                        Passing through
-                      </span>
+                      <div className="flex flex-wrap items-center gap-3 pr-6">
+                        <span className="inline-flex w-fit items-center gap-2 rounded-full border border-signal-1/25 bg-signal-1/[0.06] px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-signal-1">
+                          <span className="size-1.5 rounded-full bg-signal-1" />
+                          Passing through
+                        </span>
+                        {activeWaypoint.dateWindow && (
+                          <span className="font-mono text-xs text-paper-ink-muted">
+                            {activeWaypoint.dateWindow}
+                          </span>
+                        )}
+                      </div>
 
                       <h3 className="mt-4 font-display text-xl font-semibold text-paper-ink">
                         {activeWaypoint.name}, {activeWaypoint.stateAbbr}
                       </h3>
 
-                      <div className="mt-4 rounded-xl border border-black/[0.06] bg-paper-2 p-4">
-                        <div className="flex items-center gap-2 text-signal-1">
-                          <Store className="size-4" strokeWidth={1.75} />
-                          <span className="font-mono text-[10px] uppercase tracking-wider">
-                            Small business using AI
-                          </span>
+                      {activeWaypoint.business && (
+                        <div className="mt-4 rounded-xl border border-black/[0.06] bg-paper-2 p-4">
+                          <div className="flex items-center gap-2 text-signal-1">
+                            <Store className="size-4" strokeWidth={1.75} />
+                            <span className="font-mono text-[10px] uppercase tracking-wider">
+                              Small business using AI
+                            </span>
+                          </div>
+                          <h4 className="mt-2 font-display text-sm font-semibold text-paper-ink">
+                            {activeWaypoint.business.name}
+                          </h4>
+                          <p className="mt-1.5 text-xs leading-relaxed text-paper-ink-muted">
+                            {activeWaypoint.business.blurb}
+                          </p>
+                          <SourceLink
+                            name={activeWaypoint.business.sourceName}
+                            url={activeWaypoint.business.sourceUrl}
+                            tone="light"
+                            className="mt-2"
+                          />
                         </div>
-                        <h4 className="mt-2 font-display text-sm font-semibold text-paper-ink">
-                          {activeWaypoint.business.name}
-                        </h4>
-                        <p className="mt-1.5 text-xs leading-relaxed text-paper-ink-muted">
-                          {activeWaypoint.business.blurb}
-                        </p>
-                        <SourceLink
-                          name={activeWaypoint.business.sourceName}
-                          url={activeWaypoint.business.sourceUrl}
-                          tone="light"
-                          className="mt-2"
-                        />
-                      </div>
+                      )}
                     </>
                   )}
                 </motion.div>
@@ -352,7 +371,7 @@ export function JourneyMap() {
             </span>
             <span className="flex items-center gap-2">
               <span className="size-2 rounded-full border border-white/60 bg-signal-3" />
-              Small business along the route
+              Stop along the route
             </span>
             <span className="text-ink-faint/70">Tap a pin to see details</span>
           </div>

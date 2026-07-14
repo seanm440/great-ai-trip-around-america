@@ -77,12 +77,14 @@ const categories: SourceCategory[] = [
     icon: MapPin,
     title: "Small Businesses Along the Route",
     href: "/#route",
-    items: waypoints.map((wp) => ({
-      label: `${wp.business.name} — ${wp.name}, ${wp.stateAbbr}`,
-      context: wp.business.blurb,
-      sourceName: wp.business.sourceName,
-      sourceUrl: wp.business.sourceUrl,
-    })),
+    items: waypoints
+      .filter((wp) => wp.business)
+      .map((wp) => ({
+        label: `${wp.business!.name} — ${wp.name}, ${wp.stateAbbr}`,
+        context: wp.business!.blurb,
+        sourceName: wp.business!.sourceName,
+        sourceUrl: wp.business!.sourceUrl,
+      })),
   },
   {
     icon: Sparkles,

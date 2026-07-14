@@ -28,6 +28,13 @@ export const waypoints: Waypoint[] = [
     },
   },
   {
+    id: "atlanta",
+    name: "Atlanta",
+    stateAbbr: "GA",
+    coordinates: { lat: 33.749, lng: -84.388 },
+    dateWindow: "Sep 3–4, 2026",
+  },
+  {
     id: "new-orleans",
     name: "New Orleans",
     stateAbbr: "LA",
@@ -42,6 +49,27 @@ export const waypoints: Waypoint[] = [
     },
   },
   {
+    id: "richland-parish",
+    name: "Richland Parish",
+    stateAbbr: "LA",
+    coordinates: { lat: 32.4735, lng: -91.7593 },
+    dateWindow: "Sep 10–11, 2026",
+  },
+  {
+    id: "dallas-houston",
+    name: "Dallas or Houston",
+    stateAbbr: "TX",
+    coordinates: { lat: 32.7767, lng: -96.797 },
+    dateWindow: "Sep 14–15, 2026",
+  },
+  {
+    id: "midland-el-paso",
+    name: "Midland or El Paso",
+    stateAbbr: "TX",
+    coordinates: { lat: 31.9973, lng: -102.0779 },
+    dateWindow: "Sep 21–22, 2026",
+  },
+  {
     id: "tucson",
     name: "Tucson",
     stateAbbr: "AZ",
@@ -53,5 +81,26 @@ export const waypoints: Waypoint[] = [
       sourceName: "KOLD News 13",
       sourceUrl: "https://www.kold.com/2025/11/10/tucson-restaurant-uses-ai-robots-serve-customers/",
     },
+  },
+  {
+    id: "phoenix",
+    name: "Phoenix",
+    stateAbbr: "AZ",
+    coordinates: { lat: 33.4484, lng: -112.074 },
+    dateWindow: "Sep 23–24, 2026",
+  },
+  {
+    id: "los-angeles",
+    name: "Los Angeles",
+    stateAbbr: "CA",
+    coordinates: { lat: 34.0522, lng: -118.2437 },
+    dateWindow: "Sep 25–28, 2026",
+  },
+  {
+    id: "denver",
+    name: "Denver",
+    stateAbbr: "CO",
+    coordinates: { lat: 39.7392, lng: -104.9903 },
+    dateWindow: "Oct 1–2, 2026",
   },
 ];

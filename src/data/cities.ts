@@ -2,71 +2,13 @@ import type { City } from "@/types";
 
 export const cities: City[] = [
   {
-    slug: "washington-dc",
-    name: "Washington",
-    state: "District of Columbia",
-    stateAbbr: "DC",
-    order: 1,
-    status: "upcoming",
-    dateWindow: "Aug 2026",
-    coordinates: { lat: 38.9072, lng: -77.0369 },
-    tagline: "Where AI policy is being written — by people who rarely meet the builders.",
-    description:
-      "We're starting the trip in DC on purpose. This is where AI regulation gets written, where federal agencies are quietly modernizing decades-old systems, and where govtech founders are trying to move fast inside one of the slowest-moving customers in the world. It's the right place to ask what responsible AI adoption actually looks like at scale.",
-    themes: ["GovTech", "Policy AI", "Civic Innovation"],
-    companies: [
-      {
-        name: "Air (formerly Govini)",
-        category: "GovTech",
-        blurb:
-          "Arlington-based team behind Ark, an AI decision-science platform that helps the Department of Defense untangle supply-chain and acquisition data legacy systems can't touch. Rebranded from Govini in June 2026.",
-        sourceName: "PR Newswire",
-        sourceUrl:
-          "https://www.prnewswire.com/news-releases/govini-declares-readiness-gap-a-national-security-crisis-at-2026-reindustrialize-summit-302801833.html",
-      },
-      {
-        name: "POPVOX Foundation",
-        category: "Civic Innovation",
-        blurb:
-          "A nonprofit founded by former Congressional staffers that runs free AI training for Congress and builds open-source tools that help legislatures use modern data.",
-        sourceName: "POPVOX Foundation",
-        sourceUrl: "https://www.popvox.org/about-us",
-      },
-      {
-        name: "Center for AI and Digital Policy",
-        category: "Policy AI",
-        blurb:
-          "A DC-based nonprofit that assesses national AI policies against democratic-governance standards and trains the next generation of AI policy leaders.",
-        sourceName: "CAIDP",
-        sourceUrl: "https://www.caidp.org/about-2/",
-      },
-    ],
-    dataCenters: [
-      {
-        name: "Data Center Alley — AWS Ashburn Campus",
-        operator: "Amazon Web Services",
-        blurb:
-          "The original home of AWS's cloud infrastructure since 2006, anchoring the highest concentration of data centers on Earth in nearby Loudoun County, VA.",
-        sourceName: "Virginia Mercury",
-        sourceUrl:
-          "https://virginiamercury.com/2026/07/06/how-virginia-became-the-worlds-data-center-capital-and-how-its-going/",
-      },
-    ],
-    universities: ["Georgetown University", "George Washington University"],
-    highlights: [
-      "Founder roundtable on building AI products for government customers",
-      "Interview with a federal agency's AI modernization team",
-      "A look inside a nonprofit teaching Congress how to use AI tools",
-    ],
-  },
-  {
     slug: "nashville",
     name: "Nashville",
     state: "Tennessee",
     stateAbbr: "TN",
-    order: 2,
+    order: 1,
     status: "upcoming",
-    dateWindow: "Sept 2026",
+    dateWindow: "Aug 31 – Sep 2, 2026",
     coordinates: { lat: 36.1627, lng: -86.7816 },
     tagline: "Music City is quietly becoming a healthcare AI city.",
     description:
@@ -122,9 +64,9 @@ export const cities: City[] = [
     name: "Tampa",
     state: "Florida",
     stateAbbr: "FL",
-    order: 3,
+    order: 2,
     status: "upcoming",
-    dateWindow: "Oct 2026",
+    dateWindow: "Sep 7–9, 2026",
     coordinates: { lat: 27.9506, lng: -82.4572 },
     tagline: "Where logistics, insurance, and cybersecurity collide.",
     description:
@@ -179,9 +121,9 @@ export const cities: City[] = [
     name: "Austin",
     state: "Texas",
     stateAbbr: "TX",
-    order: 4,
+    order: 3,
     status: "upcoming",
-    dateWindow: "Nov 2026",
+    dateWindow: "Sep 16–18, 2026",
     coordinates: { lat: 30.2672, lng: -97.7431 },
     tagline: "One of the highest concentrations of AI startups per capita in the country.",
     description:
@@ -236,13 +178,13 @@ export const cities: City[] = [
     name: "Central Valley",
     state: "California",
     stateAbbr: "CA",
-    order: 5,
-    status: "planned",
-    dateWindow: "2027 — route in progress",
+    order: 4,
+    status: "upcoming",
+    dateWindow: "Sep 28–30, 2026",
     coordinates: { lat: 36.7378, lng: -119.7871 },
     tagline: "AI is changing how America grows its food.",
     description:
-      "The Central Valley grows a huge share of the country's produce — and it's become an unlikely testbed for agricultural AI: autonomous orchard equipment, crop-stress detection, and water-use optimization in a region where every drop counts. Details for this stop are still being finalized.",
+      "The Central Valley grows a huge share of the country's produce — and it's become an unlikely testbed for agricultural AI: autonomous orchard equipment, crop-stress detection, and water-use optimization in a region where every drop counts.",
     themes: ["Agriculture AI", "Water Tech", "Autonomous Equipment"],
     companies: [
       {
@@ -275,7 +217,7 @@ export const cities: City[] = [
     highlights: [
       "Ride-along on a driverless orchard sprayer",
       "Farmer interviews on adopting AI tools",
-      "Full itinerary announced closer to the visit",
+      "A look at precision irrigation in one of the country's most water-stressed regions",
     ],
   },
 ];

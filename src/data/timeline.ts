@@ -2,34 +2,29 @@ import type { TimelineEntry } from "@/types";
 
 export const timeline: TimelineEntry[] = [
   {
-    label: "Aug 2026",
-    title: "Washington, DC",
-    description: "Bus wrap unveiled, crew assembled — first stop is GovTech and policy AI.",
-    status: "upcoming",
-  },
-  {
-    label: "Sept 2026",
+    label: "Aug 31 – Sep 2",
     title: "Nashville, TN",
-    description: "Healthcare AI, creative tools, and a founder roundtable.",
+    description:
+      "Bus wrap unveiled, crew assembled — healthcare AI, creative tools, and a founder roundtable.",
     status: "upcoming",
   },
   {
-    label: "Oct 2026",
+    label: "Sep 7–9",
     title: "Tampa, FL",
     description: "Logistics AI, insurtech, and a hurricane-hardened data facility.",
     status: "upcoming",
   },
   {
-    label: "Nov 2026",
+    label: "Sep 16–18",
     title: "Austin, TX",
     description: "Robotics, developer tools, and a hyperscale GPU campus tour.",
     status: "upcoming",
   },
   {
-    label: "2027",
+    label: "Sep 28–30",
     title: "Central Valley, CA",
-    description: "Agriculture AI and the future of American farming. Details soon.",
-    status: "planned",
+    description: "Agriculture AI and the future of American farming.",
+    status: "upcoming",
   },
   {
     label: "Beyond",

@@ -19,7 +19,7 @@ const reasons = [
   {
     icon: Compass,
     title: "The story is happening everywhere, not just Silicon Valley",
-    body: "DC, Nashville, Tampa, Austin, and the Central Valley all have their own AI story. This is the whole map, not just one corner of it.",
+    body: "Nashville, Tampa, Austin, and the Central Valley all have their own AI story. This is the whole map, not just one corner of it.",
   },
 ];
 

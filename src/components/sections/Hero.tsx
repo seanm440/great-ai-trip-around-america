@@ -58,7 +58,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] text-white/90"
           >
             <span className="size-1.5 rounded-full bg-signal-2 animate-pulse-slow" />
-            5 cities announced · route expanding
+            4 cities announced · route expanding
           </motion.div>
 
           <motion.h1

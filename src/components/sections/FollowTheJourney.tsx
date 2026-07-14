@@ -70,7 +70,7 @@ export function FollowTheJourney() {
         <SectionHeading
           eyebrow="Follow the Journey"
           title="The route keeps growing"
-          description="Five cities are locked in. More get announced as the trip goes on — here's what's ahead."
+          description="Four cities are locked in. More get announced as the trip goes on — here's what's ahead."
         />
 
         {/* Timeline */}
