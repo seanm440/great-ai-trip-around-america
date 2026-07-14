@@ -2,26 +2,26 @@ import type { TimelineEntry } from "@/types";
 
 export const timeline: TimelineEntry[] = [
   {
-    label: "Aug 31 – Sep 2",
+    label: "Stop 01",
     title: "Nashville, TN",
     description:
       "Bus wrap unveiled, crew assembled — healthcare AI, creative tools, and a founder roundtable.",
     status: "upcoming",
   },
   {
-    label: "Sep 7–9",
+    label: "Stop 02",
     title: "Tampa, FL",
     description: "Logistics AI, insurtech, and a hurricane-hardened data facility.",
     status: "upcoming",
   },
   {
-    label: "Sep 16–18",
+    label: "Stop 03",
     title: "Austin, TX",
     description: "Robotics, developer tools, and a hyperscale GPU campus tour.",
     status: "upcoming",
   },
   {
-    label: "Sep 28–30",
+    label: "Stop 04",
     title: "Central Valley, CA",
     description: "Agriculture AI and the future of American farming.",
     status: "upcoming",

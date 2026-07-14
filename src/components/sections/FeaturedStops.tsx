@@ -45,7 +45,7 @@ export function FeaturedStops() {
                 <div className="relative flex items-start justify-between gap-4">
                   <div>
                     <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
-                      Stop {String(city.order).padStart(2, "0")} · {city.dateWindow}
+                      Stop {String(city.order).padStart(2, "0")}
                     </p>
                     <h3 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
                       {city.name}, {city.stateAbbr}

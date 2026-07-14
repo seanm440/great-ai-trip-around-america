@@ -8,7 +8,6 @@ export const cities: City[] = [
     stateAbbr: "TN",
     order: 1,
     status: "upcoming",
-    dateWindow: "Aug 31 – Sep 2, 2026",
     coordinates: { lat: 36.1627, lng: -86.7816 },
     tagline: "Music City is quietly becoming a healthcare AI city.",
     description:
@@ -66,7 +65,6 @@ export const cities: City[] = [
     stateAbbr: "FL",
     order: 2,
     status: "upcoming",
-    dateWindow: "Sep 7–9, 2026",
     coordinates: { lat: 27.9506, lng: -82.4572 },
     tagline: "Where logistics, insurance, and cybersecurity collide.",
     description:
@@ -123,7 +121,6 @@ export const cities: City[] = [
     stateAbbr: "TX",
     order: 3,
     status: "upcoming",
-    dateWindow: "Sep 16–18, 2026",
     coordinates: { lat: 30.2672, lng: -97.7431 },
     tagline: "One of the highest concentrations of AI startups per capita in the country.",
     description:
@@ -180,7 +177,6 @@ export const cities: City[] = [
     stateAbbr: "CA",
     order: 4,
     status: "upcoming",
-    dateWindow: "Sep 28–30, 2026",
     coordinates: { lat: 36.7378, lng: -119.7871 },
     tagline: "AI is changing how America grows its food.",
     description:

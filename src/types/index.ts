@@ -23,7 +23,6 @@ export interface City {
   stateAbbr: string;
   order: number;
   status: StopStatus;
-  dateWindow: string;
   coordinates: {
     lat: number;
     lng: number;
@@ -45,7 +44,6 @@ export interface Waypoint {
     lat: number;
     lng: number;
   };
-  dateWindow?: string;
   business?: {
     name: string;
     blurb: string;

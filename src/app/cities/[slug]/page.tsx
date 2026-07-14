@@ -62,7 +62,7 @@ export default async function CityPage({
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <StatusBadge status={city.status} />
             <span className="font-mono text-xs text-ink-faint">
-              Stop {String(city.order).padStart(2, "0")} of {sorted.length} · {city.dateWindow}
+              Stop {String(city.order).padStart(2, "0")} of {sorted.length}
             </span>
           </div>
 

@@ -285,9 +285,6 @@ export function JourneyMap() {
                     <>
                       <div className="flex items-center gap-3 pr-6">
                         <StatusBadge status={activeCity.status} />
-                        <span className="font-mono text-xs text-paper-ink-muted">
-                          {activeCity.dateWindow}
-                        </span>
                       </div>
 
                       <h3 className="mt-4 font-display text-xl font-semibold text-paper-ink">
@@ -318,17 +315,10 @@ export function JourneyMap() {
 
                   {activeWaypoint && (
                     <>
-                      <div className="flex flex-wrap items-center gap-3 pr-6">
-                        <span className="inline-flex w-fit items-center gap-2 rounded-full border border-signal-1/25 bg-signal-1/[0.06] px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-signal-1">
-                          <span className="size-1.5 rounded-full bg-signal-1" />
-                          Passing through
-                        </span>
-                        {activeWaypoint.dateWindow && (
-                          <span className="font-mono text-xs text-paper-ink-muted">
-                            {activeWaypoint.dateWindow}
-                          </span>
-                        )}
-                      </div>
+                      <span className="inline-flex w-fit items-center gap-2 rounded-full border border-signal-1/25 bg-signal-1/[0.06] px-3 py-1 pr-6 font-mono text-[11px] uppercase tracking-wider text-signal-1">
+                        <span className="size-1.5 rounded-full bg-signal-1" />
+                        Passing through
+                      </span>
 
                       <h3 className="mt-4 font-display text-xl font-semibold text-paper-ink">
                         {activeWaypoint.name}, {activeWaypoint.stateAbbr}
