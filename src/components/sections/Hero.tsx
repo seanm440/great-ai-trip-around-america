@@ -67,9 +67,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="max-w-4xl font-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
           >
-            The Great AI Trip
+            Great American AI
             <br />
-            <span className="font-normal italic text-[#f6dcc0]">Around America</span>
+            <span className="font-normal italic text-[#f6dcc0]">Road Show</span>
           </motion.h1>
 
           <motion.p

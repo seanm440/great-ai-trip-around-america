@@ -21,7 +21,7 @@ export function Footer() {
               <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-white">
                 <UsaMark className="h-3.5 w-auto" />
               </span>
-              The Great AI Trip
+              Great American AI Road Show
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
               A nationwide road trip documenting how AI is creating opportunity across
@@ -93,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-surface-border pt-8 text-xs text-ink-faint sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} The Great AI Trip Around America. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Great American AI Road Show. All rights reserved.</p>
           <p>Built to show America what AI actually looks like.</p>
         </div>
       </Container>

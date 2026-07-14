@@ -20,13 +20,13 @@ const playfair = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const siteUrl = "https://greataitrip.com";
+const siteUrl = "https://greatamericanairoadshow.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "The Great AI Trip Around America",
-    template: "%s | The Great AI Trip Around America",
+    default: "Great American AI Road Show",
+    template: "%s | Great American AI Road Show",
   },
   description:
     "One bus. Thousands of miles. Countless conversations about the future of AI. A nationwide road trip visiting the founders, engineers, and communities building America's AI future.",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     "American innovation",
   ],
   openGraph: {
-    title: "The Great AI Trip Around America",
+    title: "Great American AI Road Show",
     description:
       "One bus. Thousands of miles. Countless conversations about the future of AI.",
     url: siteUrl,
-    siteName: "The Great AI Trip Around America",
+    siteName: "Great American AI Road Show",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Great AI Trip Around America",
+    title: "Great American AI Road Show",
     description:
       "One bus. Thousands of miles. Countless conversations about the future of AI.",
   },

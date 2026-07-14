@@ -55,7 +55,7 @@ export function Header() {
             <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-white">
               <UsaMark className="h-3.5 w-auto" />
             </span>
-            <span className="hidden sm:inline">The Great AI Trip</span>
+            <span className="hidden sm:inline">Great American AI Road Show</span>
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
