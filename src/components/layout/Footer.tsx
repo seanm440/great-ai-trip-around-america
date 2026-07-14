@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { InstagramIcon, YoutubeIcon, XIcon, LinkedInIcon } from "@/components/ui/SocialIcons";
 import { Container } from "@/components/ui/Container";
+import { UsaMark } from "@/components/ui/UsaMark";
 import { cities } from "@/data/cities";
 
 const socialLinks = [
@@ -17,8 +18,8 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 font-display text-base font-semibold text-ink">
-              <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-xs font-bold text-void">
-                AI
+              <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-white">
+                <UsaMark className="h-3.5 w-auto" />
               </span>
               The Great AI Trip
             </Link>

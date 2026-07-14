@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
+import { UsaMark } from "@/components/ui/UsaMark";
 
 const navLinks = [
   { href: "#why", label: "Why" },
@@ -51,8 +52,8 @@ export function Header() {
             className="focus-ring flex items-center gap-2 font-display text-base font-semibold tracking-tight text-ink"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-xs font-bold text-void">
-              AI
+            <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-signal-1 to-signal-2 text-white">
+              <UsaMark className="h-3.5 w-auto" />
             </span>
             <span className="hidden sm:inline">The Great AI Trip</span>
           </Link>

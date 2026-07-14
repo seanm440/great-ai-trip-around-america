@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { usNationOutlinePath, US_MAP_VIEWBOX } from "@/lib/us-map";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -30,13 +31,12 @@ export default function OGImage() {
               width: 44,
               height: 44,
               borderRadius: "50%",
-              background: "linear-gradient(135deg, #6d5bff 0%, #22d3ee 100%)",
-              color: "white",
-              fontSize: 18,
-              fontWeight: 800,
+              background: "linear-gradient(135deg, #b21942 0%, #c9962b 100%)",
             }}
           >
-            AI
+            <svg viewBox={US_MAP_VIEWBOX} width="28" height="17.5" fill="#ffffff">
+              <path d={usNationOutlinePath} />
+            </svg>
           </div>
           <div style={{ fontSize: 22, fontWeight: 700, color: "#f6f7f9" }}>
             The Great AI Trip
