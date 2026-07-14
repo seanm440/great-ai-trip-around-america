@@ -56,6 +56,7 @@ export function Footer() {
                 { href: "#bus", label: "The Bus" },
                 { href: "#visit", label: "What We'll Visit" },
                 { href: "#opportunity", label: "AI Creates Opportunity" },
+                { href: "/sources", label: "Sources" },
               ].map((link) => (
                 <li key={link.href}>
                   <a

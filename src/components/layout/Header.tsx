@@ -14,6 +14,7 @@ const navLinks = [
   { href: "#stops", label: "Stops" },
   { href: "#opportunity", label: "Opportunity" },
   { href: "#follow", label: "Follow" },
+  { href: "/sources", label: "Sources" },
 ];
 
 export function Header() {

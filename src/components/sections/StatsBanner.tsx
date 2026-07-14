@@ -6,7 +6,7 @@ import { impactStats } from "@/data/impact-stats";
 
 export function StatsBanner() {
   return (
-    <section className="relative border-y border-surface-border bg-surface py-12 sm:py-16">
+    <section id="stats" className="relative border-y border-surface-border bg-surface py-12 sm:py-16">
       <Container>
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 sm:gap-x-8">
           {impactStats.map((stat, i) => (
