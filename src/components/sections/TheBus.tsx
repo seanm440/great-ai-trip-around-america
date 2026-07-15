@@ -127,17 +127,17 @@ export function TheBus() {
                 </text>
                 <text
                   x="76"
-                  y="124"
+                  y="123"
                   fontFamily="var(--font-display)"
-                  fontSize="15"
+                  fontSize="12"
                   fontWeight="800"
-                  letterSpacing="1"
+                  letterSpacing="0.4"
                   fill="white"
                   stroke="rgba(15,17,22,0.25)"
-                  strokeWidth="3"
+                  strokeWidth="2.5"
                   paintOrder="stroke"
                 >
-                  THE GREAT AI TRIP
+                  GREAT AMERICAN INNOVATION TOUR
                 </text>
 
                 {/* lower body sheen */}
