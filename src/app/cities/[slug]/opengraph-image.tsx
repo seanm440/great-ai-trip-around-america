@@ -58,7 +58,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
             </svg>
           </div>
           <div style={{ fontSize: 22, fontWeight: 700, color: "#f6f7f9" }}>
-            Great American AI Road Show
+            Great American Innovation Tour
           </div>
         </div>
 
@@ -95,7 +95,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
               color: "#f6f7f9",
             }}
           >
-            {city ? `${city.name}, ${city.stateAbbr}` : "Great American AI Road Show"}
+            {city ? `${city.name}, ${city.stateAbbr}` : "Great American Innovation Tour"}
           </div>
 
           {city && (

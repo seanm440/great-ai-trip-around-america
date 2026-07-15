@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { cities } from "@/data/cities";
 
-const siteUrl = "https://greatamericanairoadshow.com";
+const siteUrl = "https://greatamericaninnovationtour.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

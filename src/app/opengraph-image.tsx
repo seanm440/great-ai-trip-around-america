@@ -3,7 +3,7 @@ import { usNationOutlinePath, US_MAP_VIEWBOX } from "@/lib/us-map";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Great American AI Road Show";
+export const alt = "Great American Innovation Tour";
 
 export default function OGImage() {
   return new ImageResponse(
@@ -39,7 +39,7 @@ export default function OGImage() {
             </svg>
           </div>
           <div style={{ fontSize: 22, fontWeight: 700, color: "#f6f7f9" }}>
-            Great American AI Road Show
+            Great American Innovation Tour
           </div>
         </div>
 
@@ -55,8 +55,8 @@ export default function OGImage() {
               color: "#f6f7f9",
             }}
           >
-            <span>Great American AI</span>
-            <span style={{ color: "#c9962b" }}>Road Show</span>
+            <span>Great American</span>
+            <span style={{ color: "#c9962b" }}>Innovation Tour</span>
           </div>
           <div style={{ display: "flex", fontSize: 28, color: "#a7abbb", maxWidth: 820 }}>
             One bus. Thousands of miles. Countless conversations about the future of AI.
