@@ -30,8 +30,9 @@ export const opportunityStories: OpportunityStory[] = [
       "AI-powered spot-spraying tells the difference between a weed and a crop in real time, so equipment only sprays where it's actually needed.",
     stat: "59%",
     statLabel: "average herbicide savings from John Deere's AI-powered See & Spray, 2024 season",
-    sourceName: "John Deere",
-    sourceUrl: "https://www.deere.com/en/news/all-news/see-spray-herbicide-savings/",
+    sourceName: "No-Till Farmer",
+    sourceUrl:
+      "https://www.no-tillfarmer.com/articles/13642-see-and-spray-customers-see-59-average-herbicide-savings-in-2024",
   },
   {
     sector: "Education",
@@ -60,7 +61,7 @@ export const opportunityStories: OpportunityStory[] = [
     body:
       "AI-native startups are proving that a small, well-equipped team can build what used to require hundreds of people — creating a new category of company, and new kinds of jobs within it.",
     stat: "146",
-    statLabel: "employees behind Lovable's path to $400M in annual recurring revenue",
+    statLabel: "employees behind Lovable's path to $400M in annual recurring revenue, as of March 2026",
     sourceName: "TechCrunch",
     sourceUrl:
       "https://techcrunch.com/2026/03/11/lovable-says-it-added-100m-in-revenue-last-month-alone-with-just-146-employees/",

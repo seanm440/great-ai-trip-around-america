@@ -21,7 +21,7 @@ export const cities: City[] = [
           "Franklin-based team behind Dragonfly, an AI platform hospitals and insurers use to make faster, more consistent medical-necessity decisions.",
         sourceName: "Xsolis",
         sourceUrl:
-          "https://www.xsolis.com/press-release/xsolis-announces-the-official-launch-of-next-generation-ai-powered-platform-dragonfly-at-xchange-24/",
+          "https://www.xsolis.com/press-release/xsolis-announces-dragonfly-at-xchange-24/",
       },
       {
         name: "UnityAI",
@@ -131,9 +131,9 @@ export const cities: City[] = [
         name: "Apptronik",
         category: "Robotics",
         blurb:
-          "Builder of Apollo, a general-purpose humanoid robot designed for warehouse and industrial work — spun out of UT Austin's own robotics lab.",
+          "Builder of Apollo, a general-purpose humanoid robot designed for warehouse and industrial work — spun out of UT Austin's own robotics lab. The newest version, Apollo 2, is already piloting with Mercedes-Benz, GXO Logistics, and Jabil.",
         sourceName: "Apptronik",
-        sourceUrl: "https://apptronik.com/apollo",
+        sourceUrl: "https://apptronik.com/apollo/apollo-2",
       },
       {
         name: "Coder",
@@ -147,7 +147,7 @@ export const cities: City[] = [
         name: "Silicon Labs",
         category: "Semiconductors",
         blurb:
-          "A fabless chip design company headquartered in Austin, building the microcontrollers and wireless chips that power IoT devices.",
+          "A fabless chip design company headquartered in Austin, building the microcontrollers and wireless chips that power IoT devices. Texas Instruments announced a $7.5B deal to acquire the company in February 2026, expected to close in 2027.",
         sourceName: "Silicon Labs",
         sourceUrl: "https://www.silabs.com/about-us",
       },
@@ -157,7 +157,7 @@ export const cities: City[] = [
         name: "Samsung Taylor Fab",
         operator: "Samsung Foundry",
         blurb:
-          "A $17B+ chip fab under construction in nearby Taylor, TX, whose grid buildout is helping fuel a wave of new hyperscale data centers across Central Texas.",
+          "A chip fab in nearby Taylor, TX, now largely built out, with first customer (Tesla) production targeted for 2027 and total investment grown well past the original $17B estimate. Its grid buildout is helping fuel a wave of new hyperscale data centers across Central Texas.",
         sourceName: "DataCenterDynamics",
         sourceUrl:
           "https://www.datacenterdynamics.com/en/news/samsung-plans-17-billion-chip-plant-in-taylor-texas/",
@@ -187,7 +187,7 @@ export const cities: City[] = [
         name: "GUSS Automation",
         category: "Autonomous Equipment",
         blurb:
-          "Kingsburg-based maker of driverless orchard sprayers that let one operator run up to eight machines at once — real Central Valley engineering, not a Silicon Valley import. The fleet is primarily diesel-powered, with an all-electric model introduced in 2024.",
+          "Kingsburg-based maker of driverless orchard sprayers that let one operator run up to eight machines at once — real Central Valley engineering, not a Silicon Valley import. Now fully owned by John Deere (acquired August 2025, after a 2022 joint venture); the fleet is primarily diesel-powered, with an all-electric model introduced in 2024.",
         sourceName: "GUSS Automation",
         sourceUrl: "https://gussag.com/",
       },
